@@ -1,0 +1,12 @@
+
+/* Display trip cards horizontally */
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 3rem;
+}
+
+.col-3 {
+	flex: 0 0 24rem;
+	margin-bottom: 3rem;
+}
