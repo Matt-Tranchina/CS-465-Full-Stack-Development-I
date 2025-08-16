@@ -3,12 +3,12 @@
     <form *ngIf="editForm" [formGroup]="editForm" (ngSubmit)="onSubmit()">
       <!-- Code Field -->
       <div class="form-group">
-        <label>Code:</label>
+        <label>Code: </label>
         <input
         id="code"
           type="text"
           formControlName="code"
-          placeholder="Code"
+          placeholder="ID"
           class="form-control"
           [ngClass]="{ 'is-invalid': submitted && f['code'].errors }"
         />
@@ -20,7 +20,7 @@
   
       <!-- Name Field -->
       <div class="form-group">
-        <label>Name:</label>
+        <label>Name: </label>
         <input
           type="text"
           formControlName="name"
@@ -35,11 +35,11 @@
   
       <!-- Length Field -->
       <div class="form-group">
-        <label>Length:</label>
+        <label>Length: </label>
         <input
           type="text"
           formControlName="length"
-          placeholder="Length"
+          placeholder="Length of stay"
           class="form-control"
           [ngClass]="{ 'is-invalid': submitted && f['length'].errors }"
         />
@@ -50,7 +50,7 @@
   
       <!-- Start Field -->
       <div class="form-group">
-        <label>Start:</label>
+        <label>Start: </label>
         <input
           type="date"
           formControlName="start"
@@ -65,11 +65,11 @@
   
       <!-- Resort Field -->
       <div class="form-group">
-        <label>Resort:</label>
+        <label>Resort: </label>
         <input
           type="text"
           formControlName="resort"
-          placeholder="Resort"
+          placeholder="Name of Resort"
           class="form-control"
           [ngClass]="{ 'is-invalid': submitted && f['resort'].errors }"
         />
@@ -80,11 +80,11 @@
   
       <!-- Per Person Field -->
       <div class="form-group">
-        <label>Per Person:</label>
+        <label>Per Person: </label>
         <input
           type="text"
           formControlName="perPerson"
-          placeholder="Per Person"
+          placeholder="Cost per person"
           class="form-control"
           [ngClass]="{ 'is-invalid': submitted && f['perPerson'].errors }"
         />
@@ -95,26 +95,26 @@
   
       <!-- Image Name Field -->
       <div class="form-group">
-        <label>Image Name:</label>
+        <label>Image Name: </label>
         <input
           type="text"
           formControlName="image"
-          placeholder="Image"
+          placeholder="Image.jpg"
           class="form-control"
           [ngClass]="{ 'is-invalid': submitted && f['image'].errors }"
         />
         <div *ngIf="submitted && f['image'].errors">
-          <div *ngIf="f['image'].errors?.['required']">Image Name is required</div>
+          <div *ngIf="f['image'].errors?.['required']">Image is required</div>
         </div>
       </div>
   
       <!-- Description Field -->
       <div class="form-group">
-        <label>Description:</label>
+        <label>Description: </label>
         <input
           type="text"
           formControlName="description"
-          placeholder="Description"
+          placeholder="Give a good description!"
           class="form-control"
           [ngClass]="{ 'is-invalid': submitted && f['description'].errors }"
         />
